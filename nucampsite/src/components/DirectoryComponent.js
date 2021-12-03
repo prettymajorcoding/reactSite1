@@ -8,7 +8,7 @@ function RenderDirectoryItem({campsite}) {
     return (
         <Card>
             <Link to={`/directory/${campsite.id}`}>
-            import { baseUrl } from '../shared/baseUrl';
+                <CardImg width="100%" src={baseUrl + campsite.image} alt={campsite.name} />
                 <CardImgOverlay>
                     <CardTitle>{campsite.name}</CardTitle>
                 </CardImgOverlay>
